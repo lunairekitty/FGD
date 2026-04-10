@@ -1,5 +1,5 @@
 @SolidClass base(BaseEffectBrush) 
-= func_smokevolume: "A brush entity that spawns smoke particles within its volume."
+= func_smokevolume: "A brush entity that spawns smoke particles within its volume." + "This entity should never have it's volume overlapping func_preciptation, or the game will immediatley crash when the level finishes loading" + "This entity is much less performant than a particle system, so consider using that or obb_volumefog as an alternative."
 	[
 	spawnflags(flags) : "spawnflags" =
 		[
