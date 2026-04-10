@@ -1,7 +1,7 @@
 @SolidClass base(BreakableBrush) 
 	quadbounds() 
 = func_breakable_surf: "A breakable surface, for partially breakable glass / tile / etc. " +
-	"All faces but the desired visible one must be marked as NODRAW and that face must be 4 sided. " +
+	"All faces but the desired visible one must be marked as NODRAW and that face must be 4 sided. " + "Note that ONLY tools/nodraw will work! This entity is hardcoded to use it, and any other nodraw texture is ignored." +
 	"The material applied to the visible face must be set up to be breakable."
 	[
 	spawnflags(flags) : "spawnflags" =
